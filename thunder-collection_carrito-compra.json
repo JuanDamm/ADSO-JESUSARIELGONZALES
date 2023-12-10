@@ -1,0 +1,473 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "carrito-compra",
+    "dateExported": "2023-12-10T12:03:41.596Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "cliente",
+            "containerId": "",
+            "created": "2023-11-26T16:15:00.282Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "producto",
+            "containerId": "",
+            "created": "2023-11-26T21:07:09.460Z",
+            "sortNum": 12500
+        },
+        {
+            "_id": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "DetalleFactura",
+            "containerId": "",
+            "created": "2023-11-26T19:58:49.032Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "factura",
+            "containerId": "",
+            "created": "2023-11-26T16:15:00.283Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "Detalle_factura",
+            "containerId": "",
+            "created": "2023-11-26T21:03:36.722Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c792e218-3f26-4ece-acab-3d138f93ebaf",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "FindAll",
+            "url": "http://localhost:9000/v1/api/cliente",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-26T16:15:00.282Z",
+            "modified": "2023-11-26T16:15:00.282Z",
+            "headers": []
+        },
+        {
+            "_id": "53c0869d-54a5-4121-9874-3b900cee7300",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "FindAll",
+            "url": "http://localhost:9000/v1/api/detalle_factura",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-26T19:58:49.032Z",
+            "modified": "2023-11-26T19:59:36.105Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd189c43-1119-44b8-aa26-de7c9b62daa9",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "FindAll",
+            "url": "http://localhost:9000/v1/api/producto",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-26T21:07:09.461Z",
+            "modified": "2023-11-26T21:07:32.563Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2f6ba5eb-ad3e-47e3-a1ae-039786d98eff",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "Save",
+            "url": "http://localhost:9000/v1/api/cliente",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-26T16:15:00.283Z",
+            "modified": "2023-11-26T20:55:10.610Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"estado\":false,\n  \"nombre\":\"Rodolfo\",\n  \"correo\":\"Rodolfo@gmail.com\",\n  \"telefono\":\"3255454\",\n  \"direccion\":\"Calle 100\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "36e99f21-7091-49fe-9a2d-63f3cffb2c7f",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "Save",
+            "url": "http://localhost:9000/v1/api/detalle_factura",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-26T19:58:49.033Z",
+            "modified": "2023-11-26T21:13:23.004Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"estado\":false,\n  \"cantidad\":100,\n  \"valorPagar\":2500,\n  \"facturaId\":{\n    \"id\":1\n  },\n  \"productoId\":{\n    \"id\":1\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1363f41c-c8a7-44db-886a-7b072672ac54",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "Save",
+            "url": "http://localhost:9000/v1/api/producto",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-26T21:07:09.462Z",
+            "modified": "2023-11-26T21:40:14.271Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"estado\":false,\n  \"codigo\":\"2C\",\n  \"nombre\":\"Galletas\",\n  \"precio\":2500,\n  \"cantidad\":200\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d46b0ac-ff5b-40da-af74-67250f2e338f",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "Update",
+            "url": "http://localhost:9000/v1/api/cliente/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-26T16:15:00.284Z",
+            "modified": "2023-11-26T16:15:00.284Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"estado\":true,\r\n  \"nombre\":\"Mario\",\r\n  \"correo\":\"mario@gmail.com\",\r\n  \"telefono\":\"234632\",\r\n  \"direccion\":\"Calle 34\"\r\n}"
+            }
+        },
+        {
+            "_id": "5eb999c0-7045-40b2-a25e-5e64aca52cbf",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "Update",
+            "url": "http://localhost:9000/v1/api/detalle_factura/1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-26T19:58:49.034Z",
+            "modified": "2023-11-26T21:37:31.980Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"estado\":true,\n  \"cantidad\":105,\n  \"valorPagar\":2000,\n  \"facturaId\":{\n    \"id\":1\n  },\n  \"productoId\":{\n    \"id\":1\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee6adcf6-9303-416d-84d8-7bd760936331",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "Update",
+            "url": "http://localhost:9000/v1/api/cliente/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-26T21:07:09.463Z",
+            "modified": "2023-11-26T21:07:09.461Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"estado\":true,\r\n  \"nombre\":\"Mario\",\r\n  \"correo\":\"mario@gmail.com\",\r\n  \"telefono\":\"234632\",\r\n  \"direccion\":\"Calle 34\"\r\n}"
+            }
+        },
+        {
+            "_id": "6ba8da38-c62a-4263-8cca-dbbd67abbb54",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "FindById",
+            "url": "http://localhost:9000/v1/api/cliente/3",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-26T16:15:00.285Z",
+            "modified": "2023-11-26T16:15:00.285Z",
+            "headers": []
+        },
+        {
+            "_id": "a600317b-341f-4fad-b62c-3899f4ea4a82",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "FindById",
+            "url": "http://localhost:9000/v1/api/detalle_factura/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-26T19:58:49.035Z",
+            "modified": "2023-11-26T21:38:51.132Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8833c7ba-3eb7-4b18-bac4-2202941c6e89",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "FindById",
+            "url": "http://localhost:9000/v1/api/cliente/3",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-26T21:07:09.464Z",
+            "modified": "2023-11-26T21:07:09.461Z",
+            "headers": []
+        },
+        {
+            "_id": "70e3eaa7-cf91-4b91-addb-0612d15067b6",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "DeleteById",
+            "url": "http://localhost:9000/v1/api/cliente/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-26T16:15:00.286Z",
+            "modified": "2023-11-26T16:15:00.286Z",
+            "headers": []
+        },
+        {
+            "_id": "4746af79-d681-4ab3-84ba-30dc65e44525",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "DeleteById",
+            "url": "http://localhost:9000/v1/api/cliente/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-26T19:58:49.036Z",
+            "modified": "2023-11-26T19:58:49.032Z",
+            "headers": []
+        },
+        {
+            "_id": "5e3eb9a8-d85a-43d5-b6d6-183454e30614",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "DeleteById",
+            "url": "http://localhost:9000/v1/api/cliente/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-26T21:07:09.465Z",
+            "modified": "2023-11-26T21:07:09.461Z",
+            "headers": []
+        },
+        {
+            "_id": "134c28f6-5ab1-4ec0-a86c-0422b32f71d7",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "070b50a0-8a18-4ad0-a18a-0e1971396bab",
+            "name": "DeletedAt",
+            "url": "http://localhost:9000/v1/api/cliente/deleted-at/2",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-26T16:15:00.287Z",
+            "modified": "2023-11-26T16:15:00.287Z",
+            "headers": []
+        },
+        {
+            "_id": "021e3aa0-def2-4bec-b5b4-f5819ca976cb",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "6c0b18ce-81b1-4562-ac1e-28e4ac132063",
+            "name": "DeletedAt",
+            "url": "http://localhost:9000/v1/api/cliente/deleted-at/2",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-26T19:58:49.037Z",
+            "modified": "2023-11-26T19:58:49.032Z",
+            "headers": []
+        },
+        {
+            "_id": "9875be88-7560-4161-bd51-162d149d04dd",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "e8dbf146-b732-4928-b8b6-82c99a5afbc9",
+            "name": "DeletedAt",
+            "url": "http://localhost:9000/v1/api/cliente/deleted-at/2",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-26T21:07:09.466Z",
+            "modified": "2023-11-26T21:07:09.461Z",
+            "headers": []
+        },
+        {
+            "_id": "6a3e07dc-dc97-49d6-bd62-122bf3f0e2fa",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "FindAll",
+            "url": "http://localhost:9000/v1/api/factura",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-26T16:15:00.288Z",
+            "modified": "2023-11-26T21:42:16.038Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d2cf2cb3-daf3-4f2d-91d2-3f2c4fc86675",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "FindAll",
+            "url": "http://localhost:9000/v1/api/detalle_factura",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-26T21:03:36.733Z",
+            "modified": "2023-11-26T21:43:10.854Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8ad35686-9296-4d14-b98a-db018804e344",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "Save",
+            "url": "http://localhost:9000/v1/api/factura",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-26T16:15:00.289Z",
+            "modified": "2023-11-26T20:55:35.606Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"estado\":true,\n    \"codigo\":101,\n    \"fecha\":\"2023-06-10\",\n    \"valorTotal\":9300,\n    \"clienteId\":{\n        \"id\":2\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "99e34b06-16da-4fa3-adf8-44554af7ca4a",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "Save",
+            "url": "http://localhost:9000/v1/api/factura",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-26T21:03:36.734Z",
+            "modified": "2023-11-26T21:03:36.733Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"estado\":true,\n    \"codigo\":101,\n    \"fecha\":\"2023-06-10\",\n    \"valorTotal\":9300,\n    \"clienteId\":{\n        \"id\":2\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a8d27124-bdc3-4083-8ae8-83bd5d78a84f",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "Update",
+            "url": "http://localhost:9000/v1/api/factura/3",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-11-26T16:15:00.290Z",
+            "modified": "2023-11-26T16:15:00.290Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"estado\":true,\r\n  \"nombre\":\"Laura\",\r\n  \"correo\":\"laura@gmail.com\",\r\n  \"telefono\":\"7656245re\",\r\n  \"direccion\":\"Calle 11\"\r\n}"
+            }
+        },
+        {
+            "_id": "ee1ec618-8b8e-42d5-83e6-33b5074cc5e0",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "Update",
+            "url": "http://localhost:9000/v1/api/factura/3",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-11-26T21:03:36.735Z",
+            "modified": "2023-11-26T21:03:36.733Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"estado\":true,\r\n  \"nombre\":\"Laura\",\r\n  \"correo\":\"laura@gmail.com\",\r\n  \"telefono\":\"7656245re\",\r\n  \"direccion\":\"Calle 11\"\r\n}"
+            }
+        },
+        {
+            "_id": "e0092d68-feaf-412a-b771-90852e874fe5",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "FindById",
+            "url": "http://localhost:9000/v1/api/factura/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-26T16:15:00.291Z",
+            "modified": "2023-11-26T16:15:00.291Z",
+            "headers": []
+        },
+        {
+            "_id": "7b1af348-b73d-4083-851d-11ed0145b67a",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "FindById",
+            "url": "http://localhost:9000/v1/api/factura/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-26T21:03:36.736Z",
+            "modified": "2023-11-26T21:03:36.733Z",
+            "headers": []
+        },
+        {
+            "_id": "874e99df-261b-4adc-9324-d43b581fccca",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "DeleteById",
+            "url": "http://localhost:9000/v1/api/factura/1",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-11-26T16:15:00.292Z",
+            "modified": "2023-11-26T16:15:00.292Z",
+            "headers": []
+        },
+        {
+            "_id": "f4033186-fd14-465b-bf6d-6c2f4e0a4f53",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "DeleteById",
+            "url": "http://localhost:9000/v1/api/factura/1",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-11-26T21:03:36.737Z",
+            "modified": "2023-11-26T21:03:36.733Z",
+            "headers": []
+        },
+        {
+            "_id": "b7ab5b2a-597b-47fc-88cb-e5e3326a0f02",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "0f908c06-9fa5-4076-854c-4726d79ebb55",
+            "name": "DeletedAt",
+            "url": "http://localhost:9000/v1/api/factura/deleted-at/2",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-11-26T16:15:00.293Z",
+            "modified": "2023-11-26T16:15:00.293Z",
+            "headers": []
+        },
+        {
+            "_id": "3b447816-7811-447c-b6aa-6fc5588214d9",
+            "colId": "af0d59bd-3ada-4f95-a324-8f7864107ff8",
+            "containerId": "01f168a7-39d2-4e78-952b-b1e85d08bc5a",
+            "name": "DeletedAt",
+            "url": "http://localhost:9000/v1/api/factura/deleted-at/2",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-11-26T21:03:36.738Z",
+            "modified": "2023-11-26T21:03:36.733Z",
+            "headers": []
+        }
+    ]
+}
