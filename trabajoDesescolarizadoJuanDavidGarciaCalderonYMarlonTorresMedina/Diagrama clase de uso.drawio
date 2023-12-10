@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2023-08-20T21:43:52.050Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="QCLbm_64X92ulmnTa5Ai" version="21.6.8" type="device">
+  <diagram name="Página-1" id="Ve0nIA-1IrsDlV6a7ZMl">
+    <mxGraphModel dx="1050" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bxug4a2tuSKvF128QgMq-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="bxug4a2tuSKvF128QgMq-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="202.5" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-13" value="Diagrama de clases de uso" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=2;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="100" y="70" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-15" value="&amp;nbsp;Actor: Cliente&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-16" value="Realizar Retiro       &#xa; Consultar Saldo       &#xa; Realizar Depósito     &#xa; Transferir Fondos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bxug4a2tuSKvF128QgMq-15">
+          <mxGeometry y="26" width="140" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-20" value="Cajero" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-21" value="&lt;div&gt;&amp;nbsp;Registrar Nuevo Cliente&lt;/div&gt;&lt;div&gt;&amp;nbsp;Normalizar Datos&amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bxug4a2tuSKvF128QgMq-20">
+          <mxGeometry y="26" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.426;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.431;entryY=-0.054;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bxug4a2tuSKvF128QgMq-16" target="bxug4a2tuSKvF128QgMq-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="280" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-24" value="Actor: personalBanco" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-25" value="Registrar Nuevo Cliente&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bxug4a2tuSKvF128QgMq-24">
+          <mxGeometry y="26" width="140" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bxug4a2tuSKvF128QgMq-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.506;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bxug4a2tuSKvF128QgMq-21" target="bxug4a2tuSKvF128QgMq-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="231" as="sourcePoint" />
+            <mxPoint x="270" y="276" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
