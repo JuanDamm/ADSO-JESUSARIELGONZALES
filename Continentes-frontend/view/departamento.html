@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Departamento</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../asset/css/global.css'>
+    <script src='../js/departamento.js'></script>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='../asset/css/estilos.css'>
+    
+
+    <!-- Librerias -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/litera/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c494f985af.js" crossorigin="anonymous"></script>
+
+    <!-- ajax jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="inputData">
+            <form>
+                <fieldset>
+                    <legend>DEPARTAMENTO</legend>
+                    <div class="form-group row">
+
+                        <label class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-10">
+                            </br>
+                            <input type="text" class="form-control" name="nombre" id="nombre" value=""
+                                placeholder="Ingresar nombre">
+                        </div>
+
+                        <label class="col-sm-2 col-form-label">Código</label>
+                        <div class="col-sm-10">
+                            </br>
+                            <input type="text" class="form-control" name="codigo" id="codigo" value=""
+                                placeholder="Ingresar codigo">
+                        </div>
+
+                        <label class="col-sm-2 col-form-label">Paises</label>
+                        <div class="col-sm-10">
+                            </br>
+                            <select class="form-select" id="pais">
+                                <option selected>--Seleccione--</option>
+                            </select>
+                        </div>
+
+
+                        <label class="col-sm-2 col-form-label">Estado</label>
+                        <div class="col-sm-10">
+                            </br>
+                            <select class="form-select" id="estado">
+                                <option selected>--Seleccione--</option>
+                                <option value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                           </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="botonesContainer">
+        <div id="buttonData">
+            <br>
+            <button name="btnAgregar" onclick="save()" class="btn btn-success">Agregar</button>
+            <button class="btnDark" id="btnDark">
+                <span ><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </div>
+        </div>
+        <div id="outputData">
+            <!-- Aquí llegan los datos de la bd -->
+        </br>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-dark">
+                        <th>Nombre</th>
+                        <th>Codigo</th>
+                        <th>País Id</th>
+                        <th>Estado</th>
+                        <th colspan="2">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="resultData">
+                    <!-- Aquí llegan los datos de la bd -->                    
+               </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="detallePais" class="detalles-container">
+        <table class="table table-hover mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">NOMBRES</th>
+                    <th scope="col">DETALLES DEL PAÍS</th>
+                </tr>
+            </thead>
+            <tbody id="detallePaisContenido"></tbody>
+        </table>
+    </div>
+    
+
+    <script src='../js/modoOscuro.js'></script>
+</body>
+
+</html>
+
+<script>
+    loadData();
+    selectPaises();
+ </script>
